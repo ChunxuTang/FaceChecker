@@ -6,7 +6,7 @@ module.exports = {
   ],
   output: {
     path: __dirname + '/public/js/',
-    filename: 'bundle.js'
+    filename: 'face-checker.js'
   },
   module: {
     loaders: [{
