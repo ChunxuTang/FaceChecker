@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import VideoBlock from './components/VideoBlock';
 
-class FaceCheckerApp extends React.Component {
+class FaceCheckerApp extends Component {
   render() {
-    return <div></div>;
+    return (
+      <div>
+        <VideoBlock/>
+      </div>
+    );
   }
 }
 
