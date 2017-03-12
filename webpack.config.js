@@ -1,3 +1,5 @@
+const PROD = JSON.parse(process.env.PROD_ENV || '0');
+
 module.exports = {
   entry: [
     './src/index.js'
@@ -21,5 +23,12 @@ module.exports = {
   devServer: {
     historyApiFallback: true,
     contentBase: './'
-  }
+  },
+  plugins: PROD ? [
+      new webpack.optimize.UglifyJsPlugin({
+        compress: {
+          warnings: false
+        }
+      })
+    ] : []
 };
