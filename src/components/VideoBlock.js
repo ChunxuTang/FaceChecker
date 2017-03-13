@@ -36,7 +36,7 @@ class VideoBlock extends Component {
 
       for (let rect of event.data) {
         ctx.strokeStyle = '#a64ceb';
-        ctx.lineWidth = "5";
+        ctx.lineWidth = "4";
         ctx.strokeRect(rect.x, rect.y, rect.width, rect.height);
         this.setState({
           evaluation: 'Good position'
